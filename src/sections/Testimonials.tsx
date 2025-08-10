@@ -44,13 +44,13 @@ export const Testimonials = () => {
       { translateX: 0 },
       { duration: 20, ease: 'linear', repeat: Infinity }
     );
-  });
+  }, []);
   useEffect(() => {
     if (animationRef.current) {
       if (isHovered) {
-        animationRef.current.speed = 0;
+        animationRef.current.pause();
       } else {
-        animationRef.current.speed = 1;
+        animationRef.current.play();
       }
     }
   }, [isHovered]);
