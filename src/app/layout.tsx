@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'AI Startup Landing Page',
   description: 'A landing page for an AI startup created with Frontend Tribe',
+  verification: {
+    google: 'JDqk20Q6vdJ3_y0u2--KEDQogny0dB7-syNnw41WhAk',
+  },
 };
 
 export default function RootLayout({
